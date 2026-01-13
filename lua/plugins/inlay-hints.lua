@@ -4,7 +4,6 @@ return {
     ft = { "rust" },
     opts = {
         server = {
-            cmd = { vim.fn.expand("~/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rust-analyzer") },
             on_attach = function(client, bufnr)
                 vim.lsp.inlay_hint.enable()
             end,
